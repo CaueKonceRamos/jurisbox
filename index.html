@@ -1,0 +1,354 @@
+Entendi, vou adicionar o link correto para o feedback.
+<html lang="pt-BR">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   JurisBox
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+ </head>
+ <body class="font-roboto bg-gray-100 flex flex-col min-h-screen">
+  <div class="flex flex-1 flex-col md:flex-row">
+   <!-- Sidebar -->
+   <div class="w-full md:w-20 bg-gray-200 text-gray-900 flex flex-row md:flex-col items-center py-4">
+    <div class="mb-8">
+     <span class="text-2xl font-bold">
+      JS
+     </span>
+    </div>
+    <div class="flex flex-row md:flex-col space-x-6 md:space-x-0 md:space-y-6">
+     <div class="group relative">
+      <i class="fas fa-tachometer-alt text-xl md:text-2xl">
+      </i>
+      <span class="absolute left-12 md:left-12 top-1/2 transform -translate-y-1/2 bg-gray-200 text-gray-900 text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100">
+       Painel
+      </span>
+     </div>
+     <div class="group relative">
+      <i class="fas fa-users text-xl md:text-2xl">
+      </i>
+      <span class="absolute left-12 md:left-12 top-1/2 transform -translate-y-1/2 bg-gray-200 text-gray-900 text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100">
+       Clientes
+      </span>
+     </div>
+     <div class="group relative">
+      <i class="fas fa-briefcase text-xl md:text-2xl">
+      </i>
+      <span class="absolute left-12 md:left-12 top-1/2 transform -translate-y-1/2 bg-gray-200 text-gray-900 text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100">
+       Processos
+      </span>
+     </div>
+     <div class="group relative">
+      <i class="fas fa-calendar-alt text-xl md:text-2xl">
+      </i>
+      <span class="absolute left-12 md:left-12 top-1/2 transform -translate-y-1/2 bg-gray-200 text-gray-900 text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100">
+       Agenda
+      </span>
+     </div>
+     <div class="group relative">
+      <i class="fas fa-handshake text-xl md:text-2xl">
+      </i>
+      <span class="absolute left-12 md:left-12 top-1/2 transform -translate-y-1/2 bg-gray-200 text-gray-900 text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100">
+       Parceiros
+      </span>
+     </div>
+     <div class="group relative">
+      <i class="fas fa-file-alt text-xl md:text-2xl">
+      </i>
+      <span class="absolute left-12 md:left-12 top-1/2 transform -translate-y-1/2 bg-gray-200 text-gray-900 text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100">
+       Documentos
+      </span>
+     </div>
+     <div class="group relative">
+      <i class="fas fa-calendar-check text-xl md:text-2xl">
+      </i>
+      <span class="absolute left-12 md:left-12 top-1/2 transform -translate-y-1/2 bg-gray-200 text-gray-900 text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100">
+       Atribuir à Agenda
+      </span>
+     </div>
+     <div class="group relative">
+      <i class="fas fa-cog text-xl md:text-2xl">
+      </i>
+      <span class="absolute left-12 md:left-12 top-1/2 transform -translate-y-1/2 bg-gray-200 text-gray-900 text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100">
+       Configurações
+      </span>
+     </div>
+    </div>
+   </div>
+   <!-- Main Content -->
+   <div class="flex-1 p-4 md:p-6">
+    <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+     <h1 class="text-2xl font-bold text-gray-700 mb-4 md:mb-0">
+      Painel
+     </h1>
+     <div class="flex space-x-2 md:space-x-4">
+      <input class="px-4 py-2 border rounded-lg w-full md:w-auto" placeholder="Pesquisar..." type="text"/>
+      <button class="px-4 py-2 bg-gray-600 text-white rounded-lg">
+       Filtrar
+      </button>
+      <button class="px-4 py-2 bg-gray-600 text-white rounded-lg">
+       Ordenar
+      </button>
+     </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+     <div class="bg-white p-4 md:p-6 rounded-lg shadow-md">
+      <h2 class="text-xl font-bold text-gray-700 mb-4">
+       Clientes
+      </h2>
+      <button class="px-4 py-2 bg-blue-600 text-white rounded-lg w-full md:w-auto" onclick="document.getElementById('add-client-modal').classList.remove('hidden')">
+       Adicionar Cliente
+      </button>
+     </div>
+     <div class="bg-white p-4 md:p-6 rounded-lg shadow-md">
+      <h2 class="text-xl font-bold text-gray-700 mb-4">
+       Processos
+      </h2>
+      <button class="px-4 py-2 bg-blue-600 text-white rounded-lg w-full md:w-auto" onclick="document.getElementById('add-process-modal').classList.remove('hidden')">
+       Adicionar Processo
+      </button>
+     </div>
+     <div class="bg-white p-4 md:p-6 rounded-lg shadow-md">
+      <h2 class="text-xl font-bold text-gray-700 mb-4">
+       Atribuir à Agenda
+      </h2>
+      <button class="px-4 py-2 bg-blue-600 text-white rounded-lg w-full md:w-auto" onclick="document.getElementById('add-agenda-modal').classList.remove('hidden')">
+       Adicionar à Agenda
+      </button>
+     </div>
+    </div>
+    <div class="mt-6">
+     <h2 class="text-2xl font-bold text-gray-700 mb-4">
+      Parceiros
+     </h2>
+     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+      <div class="bg-white p-4 md:p-6 rounded-lg shadow-md flex flex-col items-center">
+       <img alt="Foto de João Silva, um homem de negócios sorridente vestindo terno e gravata" class="w-24 h-24 rounded-full mb-4" src="https://placehold.co/100x100"/>
+       <h3 class="text-xl font-bold text-gray-700">
+        João Silva
+       </h3>
+       <p class="text-gray-600">
+        Advogado
+       </p>
+      </div>
+      <div class="bg-white p-4 md:p-6 rounded-lg shadow-md flex flex-col items-center">
+       <img alt="Foto de Maria Oliveira, uma mulher de negócios sorridente vestindo um blazer" class="w-24 h-24 rounded-full mb-4" src="https://placehold.co/100x100"/>
+       <h3 class="text-xl font-bold text-gray-700">
+        Maria Oliveira
+       </h3>
+       <p class="text-gray-600">
+        Consultora Jurídica
+       </p>
+      </div>
+      <div class="bg-white p-4 md:p-6 rounded-lg shadow-md flex flex-col items-center">
+       <img alt="Foto de Carlos Pereira, um homem de negócios sorridente vestindo terno e gravata" class="w-24 h-24 rounded-full mb-4" src="https://placehold.co/100x100"/>
+       <h3 class="text-xl font-bold text-gray-700">
+        Carlos Pereira
+       </h3>
+       <p class="text-gray-600">
+        Advogado
+       </p>
+      </div>
+      <div class="bg-white p-4 md:p-6 rounded-lg shadow-md flex flex-col items-center">
+       <img alt="Foto de Ana Costa, uma mulher de negócios sorridente vestindo um blazer" class="w-24 h-24 rounded-full mb-4" src="https://placehold.co/100x100"/>
+       <h3 class="text-xl font-bold text-gray-700">
+        Ana Costa
+       </h3>
+       <p class="text-gray-600">
+        Consultora Jurídica
+       </p>
+      </div>
+     </div>
+     <div class="mt-6 flex justify-center">
+      <a class="px-4 py-2 bg-green-600 text-white rounded-lg" href="https://forms.gle/WVqEHJf2GQSJ1uax8" target="_blank">
+       Deixe seu Feedback
+      </a>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Add Client Modal -->
+  <div class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center hidden" id="add-client-modal">
+   <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-xs relative">
+    <button class="absolute top-2 right-2 text-gray-600 hover:text-gray-900" onclick="document.getElementById('add-client-modal').classList.add('hidden')">
+     <i class="fas fa-times">
+     </i>
+    </button>
+    <h2 class="text-2xl font-bold text-gray-700 mb-4">
+     Adicionar Cliente
+    </h2>
+    <form>
+     <div class="mb-4">
+      <label class="block text-gray-700 mb-2" for="nome">
+       Nome
+      </label>
+      <input class="w-full px-4 py-2 border rounded-lg" id="nome" name="nome" type="text"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700 mb-2" for="cpf">
+       CPF
+      </label>
+      <input class="w-full px-4 py-2 border rounded-lg" id="cpf" name="cpf" type="text"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700 mb-2" for="rg">
+       RG
+      </label>
+      <input class="w-full px-4 py-2 border rounded-lg" id="rg" name="rg" type="text"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700 mb-2" for="descricao">
+       Descrição
+      </label>
+      <textarea class="w-full px-4 py-2 border rounded-lg" id="descricao" name="descricao"></textarea>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700 mb-2" for="data-nascimento">
+       Data de Nascimento
+      </label>
+      <input class="w-full px-4 py-2 border rounded-lg" id="data-nascimento" name="data-nascimento" type="date"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700 mb-2" for="cidade">
+       Cidade
+      </label>
+      <input class="w-full px-4 py-2 border rounded-lg" id="cidade" name="cidade" type="text"/>
+     </div>
+     <div class="flex justify-end space-x-4">
+      <button class="px-4 py-2 bg-gray-600 text-white rounded-lg" onclick="document.getElementById('add-client-modal').classList.add('hidden')" type="button">
+       Cancelar
+      </button>
+      <button class="px-4 py-2 bg-blue-600 text-white rounded-lg" type="submit">
+       Adicionar
+      </button>
+     </div>
+    </form>
+   </div>
+  </div>
+  <!-- Add Process Modal -->
+  <div class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center hidden" id="add-process-modal">
+   <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-xs relative">
+    <button class="absolute top-2 right-2 text-gray-600 hover:text-gray-900" onclick="document.getElementById('add-process-modal').classList.add('hidden')">
+     <i class="fas fa-times">
+     </i>
+    </button>
+    <h2 class="text-2xl font-bold text-gray-700 mb-4">
+     Adicionar Processo
+    </h2>
+    <form>
+     <div class="mb-4">
+      <label class="block text-gray-700 mb-2" for="numero-processo">
+       Número do Processo
+      </label>
+      <input class="w-full px-4 py-2 border rounded-lg" id="numero-processo" name="numero-processo" type="text"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700 mb-2" for="vara">
+       Vara
+      </label>
+      <input class="w-full px-4 py-2 border rounded-lg" id="vara" name="vara" type="text"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700 mb-2" for="tipo-processo">
+       Tipo de Processo
+      </label>
+      <input class="w-full px-4 py-2 border rounded-lg" id="tipo-processo" name="tipo-processo" type="text"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700 mb-2" for="cliente-envolvido">
+       Adicionar Cliente Envolvido
+      </label>
+      <input class="w-full px-4 py-2 border rounded-lg" id="cliente-envolvido" name="cliente-envolvido" type="text"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700 mb-2" for="responsavel">
+       Responsável
+      </label>
+      <select class="w-full px-4 py-2 border rounded-lg" id="responsavel" name="responsavel">
+       <option value="joao-silva">
+        João Silva
+       </option>
+       <option value="maria-oliveira">
+        Maria Oliveira
+       </option>
+       <option value="carlos-pereira">
+        Carlos Pereira
+       </option>
+       <option value="ana-costa">
+        Ana Costa
+       </option>
+      </select>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700 mb-2" for="grupo-acao">
+       Grupo de Ação
+      </label>
+      <select class="w-full px-4 py-2 border rounded-lg" id="grupo-acao" name="grupo-acao">
+       <option value="trabalhista">
+        Trabalhista
+       </option>
+       <option value="civel">
+        Cível
+       </option>
+       <option value="previdenciario">
+        Previdenciário
+       </option>
+       <option value="consumidor">
+        Consumidor
+       </option>
+       <option value="penal">
+        Penal
+       </option>
+      </select>
+     </div>
+     <div class="flex justify-end space-x-4">
+      <button class="px-4 py-2 bg-gray-600 text-white rounded-lg" onclick="document.getElementById('add-process-modal').classList.add('hidden')" type="button">
+       Cancelar
+      </button>
+      <button class="px-4 py-2 bg-blue-600 text-white rounded-lg" type="submit">
+       Adicionar
+      </button>
+     </div>
+    </form>
+   </div>
+  </div>
+  <!-- Add Agenda Modal -->
+  <div class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center hidden" id="add-agenda-modal">
+   <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-xs relative">
+    <button class="absolute top-2 right-2 text-gray-600 hover:text-gray-900" onclick="document.getElementById('add-agenda-modal').classList.add('hidden')">
+     <i class="fas fa-times">
+     </i>
+    </button>
+    <h2 class="text-2xl font-bold text-gray-700 mb-4">
+     Adicionar à Agenda
+    </h2>
+    <form>
+     <div class="mb-4">
+      <label class="block text-gray-700 mb-2" for="evento">
+       Evento
+      </label>
+      <input class="w-full px-4 py-2 border rounded-lg" id="evento" name="evento" type="text"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700 mb-2" for="data">
+       Data
+      </label>
+      <input class="w-full px-4 py-2 border rounded-lg" id="data" name="data" type="date"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700 mb-2" for="hora">
+       Hora
+      </label>
+      <input class="w-full px-4 py-2 border rounded-lg" id="hora" name="hora" type="time"/>
+     </div>
+     <div class="mb-4">
+     </div>
+    </form>
+   </div>
+  </div>
+ </body>
+</html>

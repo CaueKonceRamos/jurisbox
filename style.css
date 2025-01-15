@@ -1,0 +1,63 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f4f6;
+    color: #374151;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar */
+.sidebar {
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar:hover {
+    background-color: #e5e7eb;
+}
+
+/* Tooltip */
+.group:hover .group-hover\:opacity-100 {
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+
+/* Buttons */
+button {
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #4b5563;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Modals */
+.modal {
+    transition: opacity 0.2s ease-in-out;
+}
+
+.modal.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Cards */
+.card {
+    border: 1px solid #d1d5db;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+footer {
+    font-size: 0.875rem;
+}
